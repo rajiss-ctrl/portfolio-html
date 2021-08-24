@@ -1,0 +1,430 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  --bg-color: #fcfcfc;
+  --secondary-color: #ff7235;
+  --secondary-shadow: #a17a69;
+}
+
+body {
+  background: #fff;
+}
+
+header {
+  border-top: 10px solid deepskyblue;
+  height: 80px;
+  width: 100vw;
+  background: rgba(19, 23, 16, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  position: fixed;
+  top: 0;
+}
+.close {
+  display: none;
+}
+.hambugger {
+  position: absolute;
+  right: 10px;
+}
+.hambugger img {
+  width: 35px;
+}
+.logo {
+  background: white;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  border-radius: 100px;
+  width: 60px;
+  padding: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  color: blue;
+}
+.logo:hover{
+  width: 62px;
+  transition: 1s ease-out;
+  cursor: pointer;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.nav-menu {
+  display: none;
+  position: absolute;
+  right: 25%;
+  top: 15px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  width: 50%;
+  min-height: 100px;
+  border-radius: 5px;
+  outline: none;
+  border:none;
+}
+
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  color: #161515;
+  font-size: 1.5rem;
+}
+article {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+article img {
+  width: 80%;
+}
+article .about_remark {
+  text-align: center;
+  padding: 0 10px;
+  font-size: 2.4rem;
+}
+
+section.more_about_me {
+  background: #ededed;
+  padding-top: 10px;
+  /* background: #edede1; */
+  margin-top: 1.5rem;
+  width: 100%;
+  color: black;
+}
+section.more_about_me h2 {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+section.more_about_me p {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.skill_section {
+  text-align: center;
+  width: 100%;
+}
+svg {
+  width: 30%;
+  height: 100%;
+}
+.html5-icon h3,
+.bootstrap h3,
+.react-icon h3,
+.css3-icon h3,
+.js-icon h3,
+.git h3 {
+  margin-top: -13px;
+}
+.skill {
+  margin-top: 1rem;
+}
+.skill_title {
+  font-size: 2rem;
+}
+
+.skill_title,
+.recent_project_title {
+  text-align: center;
+}
+.project {
+  margin-top: 3rem;
+}
+.recent_project {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project-sample {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.project-sample img {
+  width: 40%;
+  margin-top: 1rem;
+}
+
+.project-sample a {
+  text-decoration: none;
+  text-align: center;
+  margin: 10px;
+}
+.project-sample p {
+  text-align: center;
+}
+
+.form_section {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+.form_section h2 {
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+form {
+  width: 78%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+}
+form p {
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  font-size: 18px;
+  color: black;
+}
+form input {
+  outline: none;
+  border: 1.5px solid #87ceeb;
+  padding: 10px;
+  width: 80%;
+  margin-top: 1rem;
+  font-size: 16px;
+}
+label {
+  margin: 15px 0 -15px 0;
+}
+textarea {
+  border: 1.5px solid #87ceeb;
+  width: 80%;
+  min-height: 100px;
+  margin-top: 1rem;
+  outline: none;
+}
+button {
+  outline: none;
+  outline-style: none;
+  margin: 20px 0;
+  border: none;
+  background: deepskyblue;
+  border-radius: 15px;
+  padding: 0.8rem;
+  color: #fff;
+  width: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  filter: grayscale(100%);
+}
+button:hover {
+  background: white;
+  color: black;
+  transition: 0.3s ease-in;
+  border: 1px solid black;
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  background: #fff;
+}
+footer img {
+  width: 15%;
+}
+footer img.arrow {
+  width: 28px;
+  position: fixed;
+  right: 0px;
+  bottom: 5px;
+  z-index: -1;
+}
+.copyright{
+text-align: center;
+}
+@media screen and (min-width: 700px) {
+  header {
+    z-index: 2;
+  }
+
+  header img {
+    display: none;
+  }
+  /* the box shadow drop down is set to none to stop it on large devices */
+  header nav ul {
+    display: flex;
+    color: #fff;
+    right: 15px;
+    position: static;
+    box-shadow: none;
+  }
+  nav ul li {
+    margin-left: 15px;
+    list-style: none;
+  }
+  /* there is need to use bg because of the drop down with white bg (mobile first approach) */
+  .nav-menu {
+    display: flex;
+    position: static;
+    right: 40%;
+    background: rgba(19, 23, 16, 0.01);
+    padding-right: 15px;
+    width: auto;
+    min-height: auto;
+    border-radius: none;
+    box-shadow: none;
+  }
+
+  ul li a {
+    color: #fff;
+  }
+  ul li a:hover {
+    color: skyblue;
+    transition: 0.5s ease-in;
+  }
+  article {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 15%;
+  }
+  article img {
+    width: 30%;
+  }
+
+  .about_remark {
+    width: 50%;
+  }
+  .about_remark p {
+    text-align: left;
+  }
+  .about_remark p {
+    font-size: 50px;
+    text-align: left;
+    font-weight: bold;
+  }
+  .skill_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3rem;
+  }
+  svg {
+    width: 35%;
+  }
+  .skill_section .html5-icon,
+  .skill_section .css3-icon,
+  .skill_section .js-icon,
+  .skill_section .bootstrap,
+  .skill_section .react-icon,
+  .skill_section .git {
+    width: 25%;
+    margin: 1rem 2rem;
+  }
+
+  section.more_about_me {
+    background: #fff;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  section.more_about_me h2,
+  section.more_about_me p {
+    width: 90%;
+    background: #ededed;
+  }
+  section.more_about_me h2 {
+    padding-top: 1rem;
+  }
+  section.more_about_me p {
+    padding: 0 2rem 2rem 2rem;
+  }
+  .recent_project {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .project-sample {
+    width: 25%;
+    height: 300px;
+    margin: 15px;
+  }
+  .project-sample p {
+    padding: 10px;
+  }
+
+  footer img.twitter {
+    width: 3%;
+    position: fixed;
+    top: 200px;
+    right: 5px;
+  }
+  footer img.instagram {
+    width: 3%;
+    position: fixed;
+    top: 250px;
+    right: 5px;
+  }
+  footer img.linkedin {
+    width: 3%;
+    position: fixed;
+    top: 300px;
+    right: 5px;
+  }
+  footer img.github {
+    width: 3%;
+    position: fixed;
+    top: 350px;
+    right: 5px;
+  }
+  footer img.arrow {
+    width: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 3px;
+    z-index: 1;
+  }
+  form {
+    width: 50%;
+  }
+  .form_section {
+    background: #fff;
+  }
+  footer {
+    margin-top: 15px;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+  }
+  footer .hng,
+  footer .zuriteam,
+  footer .i4g {
+    width: 33%;
+    margin: 0;
+  }
+  .hng img,
+  .zuriteam img,
+  .i4g img {
+    width: 100px;
+    height: 50px;
+  }
+}
