@@ -45,7 +45,7 @@ header {
   text-align: center;
   color: blue;
 }
-.logo:hover{
+.logo:hover {
   width: 62px;
   transition: 1s ease-out;
   cursor: pointer;
@@ -67,7 +67,7 @@ nav {
   min-height: 100px;
   border-radius: 5px;
   outline: none;
-  border:none;
+  border: none;
 }
 
 ul li {
@@ -107,9 +107,6 @@ section.more_about_me h2 {
 }
 section.more_about_me p {
   font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 20px;
 }
 .skill_section {
@@ -174,6 +171,51 @@ svg {
   text-align: center;
 }
 
+.cert {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 20px;
+}
+.img_box1,
+.img_box2,
+.img_box3,
+.img_box4 {
+  padding: 10px;
+  margin: 10px;
+  width: 90%;
+  min-height: 240px;
+
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  z-index: -1;
+}
+
+.img_box1 {
+  background-image: url("assets/img/coursera.png");
+  background-position: center;
+  background-size: cover;
+}
+.img_box2 {
+  background-image: url("assets/img/sarafadeen.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.img_box3 {
+  background-image: url("assets/img/dgMrkt.png");
+  background-position: center;
+  background-size: cover;
+}
+.img_box4 {
+  background-image: url("assets/img/google.png");
+  background-position: center;
+  background-size: cover;
+}
 .form_section {
   padding: 20px 0;
   display: flex;
@@ -234,14 +276,14 @@ button {
   cursor: pointer;
   font-size: 16px;
   filter: grayscale(100%);
+  transition: all 0.1s ease-in-out;
 }
 button:hover {
-  background: white;
-  color: black;
-  transition: 0.3s ease-in;
-  border: 1px solid black;
+  background: #d6b6e6;
+  color: #088f08;
+  border: none;
   filter: grayscale(0%);
-  transform: scale(1.05);
+  transform: scale(0.8);
 }
 
 footer {
@@ -258,8 +300,8 @@ footer img.arrow {
   bottom: 5px;
   z-index: -1;
 }
-.copyright{
-text-align: center;
+.copyright {
+  text-align: center;
 }
 @media screen and (min-width: 700px) {
   header {
@@ -363,6 +405,12 @@ text-align: center;
     flex-wrap: wrap;
     flex-direction: row;
   }
+  .img_box1,
+  .img_box2,
+  .img_box3,
+  .img_box4 {
+    width: 23%;
+  }
   .project-sample {
     width: 25%;
     height: 300px;
@@ -403,6 +451,7 @@ text-align: center;
     right: 3px;
     z-index: 1;
   }
+
   form {
     width: 50%;
   }
